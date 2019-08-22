@@ -7,6 +7,7 @@ int main()
     string s,o;
     cout<<o;
     getline(cin,s);
+    
     //cout<<s[2];
     
     auto x = s.end();
