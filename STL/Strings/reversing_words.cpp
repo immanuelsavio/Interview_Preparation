@@ -15,4 +15,4 @@ int main()
         o.push_back(*x);
         x--;
     return 0;
-    }
+}
