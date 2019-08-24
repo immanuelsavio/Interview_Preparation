@@ -14,3 +14,5 @@ int main()
         //cout<<*x;
         o.push_back(*x);
         x--;
+    return 0;
+    }
