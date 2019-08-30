@@ -9,9 +9,9 @@ int main()
 	int n;
 	cin>>n;
 	long long int i;
-    vector<long long int> leader;
 	while(n--)
 	{	
+        vector<long long int> leader;
 		long long int size, lead=0;
 		cin>>size;
 		long long int arr[size];
@@ -31,9 +31,14 @@ int main()
 		}
         reverse(leader.begin(), leader.end());
         
-        for(auto j=leader.begin(); j!=leader.end();++j)
+        // for(i=0; i < leader.size();i++)
+        // {
+        //     cout<<leader[i]<<" ";
+        // }
+        for(auto j = leader.begin(); j!=leader.end(); j++)
             cout<<*j<<" ";
-}
+        cout<<endl;
+    }
 	return 0;
 }
 
