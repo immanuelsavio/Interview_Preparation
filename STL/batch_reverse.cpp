@@ -17,17 +17,25 @@ int main()
         }
         while(index<n)
         {
-            reverse(a+index,a+index+k);
-            index = index+k;
-            if(index>n)
+            if(index+k<n)
             {
-                if(index-k!=n-1)
-                    reverse(a+(index-k),a+n);
-                    
+                reverse(a+index,a+index+k);
+                index = index+k;
+            }
+            else if(index+k==n-1)
+            {
+                break;   
+            }
+            else
+            {
+                reverse(a+(index%k),a+n);
+                break;
             }
         }
-        for(i=0;i<n;i++)
-            cout<<a[i]<<" ";
+        
+            for(i=0;i<n;i++)
+                cout<<a[i]<<" ";
+        
     }
 	return 0;
 }
