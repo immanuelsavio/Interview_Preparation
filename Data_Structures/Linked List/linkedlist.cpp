@@ -7,6 +7,8 @@ using namespace std;
  */
 struct node
 {
+
+    
     int info;
     struct node *next;
 }*start;
