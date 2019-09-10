@@ -11,7 +11,7 @@ public:
         ListNode *node = head;
         ListNode *prev = head;
         int count = 0;
-        while(node->next != NULL)
+        while(node->next != NULL) 
         {
             count++;
             node = node->next;
